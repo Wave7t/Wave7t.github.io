@@ -1,12 +1,13 @@
 # wave7t.github.io
 
-Source of <https://wave7t.github.io> — a single static page.
+Source of <https://www.wanteng.top> — a single static page.
 No build step, no JavaScript, no dependencies: the repository root *is* the site.
 
 ```
 index.html            the whole page
 assets/css/site.css   all styling (aurora background, glass cards, responsive, print)
 assets/img/           portrait.jpg (3:4) and favicon.svg
+CNAME                 custom domain served by GitHub Pages
 .nojekyll             tell GitHub Pages to serve files as-is
 ```
 
@@ -38,7 +39,8 @@ three blurred shapes are `.orb--1/2/3` in the `.aurora` block.
 
 ## Publishing
 
-GitHub Pages serves this repository's `main` branch at <https://wave7t.github.io>.
+GitHub Pages serves this repository's `main` branch at <https://www.wanteng.top>
+(the `CNAME` file holds the domain; `wave7t.github.io` redirects to it).
 
 ```bash
 # preview locally
