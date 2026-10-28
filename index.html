@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Teng Wan (万腾) · Tsinghua University</title>
+<meta name="description" content="Teng Wan, Ph.D. student in the Department of Electronic Engineering at Tsinghua University. LLM inference systems, sparse attention, hardware-software co-design, compute-in-memory.">
+<meta name="author" content="Teng Wan">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Teng Wan (万腾) · Tsinghua University">
+<meta property="og:description" content="Ph.D. student at Tsinghua University working on LLM inference systems and hardware-software co-design.">
+<meta property="og:image" content="assets/img/portrait.jpg">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body>
+
+<!-- decorative background glow -->
+<div class="aurora" aria-hidden="true">
+  <span class="orb orb--1"></span>
+  <span class="orb orb--2"></span>
+  <span class="orb orb--3"></span>
+</div>
+
+<main class="page">
+
+  <!-- ===================== identity card ===================== -->
+  <header class="card hero">
+    <img class="avatar" src="assets/img/portrait.jpg" alt="Teng Wan" width="660" height="880">
+
+    <div class="hero__text">
+      <h1>万腾 <span class="h1-en">Teng Wan</span></h1>
+      <p class="affil">Ph.D. Student · Department of Electronic Engineering, Tsinghua University</p>
+      <p class="bio">
+        I work at the boundary between algorithms and hardware — making large models run faster on the
+        silicon they actually live on.
+      </p>
+
+      <nav class="links" aria-label="Contact">
+        <a href="mailto:want24@mails.tsinghua.edu.cn">Email</a>
+        <a href="https://scholar.google.com/citations?user=vrmjLdUAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a>
+        <a href="https://github.com/Wave7t" target="_blank" rel="noopener">GitHub</a>
+      </nav>
+
+      <ul class="chips" aria-label="Research interests">
+        <li>Inference systems</li>
+        <li>Sparse attention</li>
+        <li>HW–SW co-design</li>
+        <li>Compute-in-memory</li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- ===================== about ===================== -->
+  <section class="card">
+    <h2>About</h2>
+
+    <p>
+      I am a Ph.D. student in the Department of Electronic Engineering at Tsinghua University, advised by
+      Prof. Xueqing Li. My work sits between machine learning and computer architecture: I am drawn to
+      problems where the structure of a model and the machine that runs it have to be designed together.
+    </p>
+
+  </section>
+
+  <!-- ===================== publications ===================== -->
+  <section class="card">
+    <h2>Publications</h2>
+
+    <ol class="pubs">
+
+      <li>
+        <a class="pub-title" href="https://scholar.google.com/scholar?q=EGO+Efficient+Compression+of+Unstructured+Sparse+DNNs+Compute-in-Memory" target="_blank" rel="noopener">
+          EGO: Efficient Compression of Unstructured Sparse DNNs for Compute-in-Memory based on Graph
+          Minimum-Cost Matching Optimization
+        </a>
+        <p class="pub-authors"><strong>Teng Wan</strong>, Y. Cao, H. Yang, X. Li</p>
+        <p class="pub-venue">Design, Automation &amp; Test in Europe (DATE), 2026</p>
+        <details>
+          <summary>Abstract</summary>
+          <p>
+            Compute-in-memory arrays have a fixed structure, which unstructured sparsity does not match.
+            We cast the compression as a minimum-cost matching problem on a graph, mapping weights onto
+            arrays at almost no accuracy loss and cutting both storage and compute overhead.
+          </p>
+        </details>
+      </li>
+
+      <li>
+        <a class="pub-title" href="https://scholar.google.com/scholar?q=ADDR+Architecture+Design+and+Model+Deployment+Optimization+Hybrid+SRAM-ROM+Compute-in-Memory" target="_blank" rel="noopener">
+          ADDR: Architecture Design and Model Deployment Optimization for Hybrid SRAM-ROM
+          Compute-in-Memory
+        </a>
+        <p class="pub-authors"><strong>Teng Wan</strong>, Y. Chen, Z. Chen, Y. Liu, H. Yang, X. Li</p>
+        <p class="pub-venue">Great Lakes Symposium on VLSI (GLSVLSI), pp. 22–28, 2025</p>
+        <details>
+          <summary>Abstract</summary>
+          <p>
+            SRAM is flexible but large; ROM is dense but static. Hybridising them lets weights live where
+            their access patterns suit them. Since architecture and deployment are tightly coupled, we
+            search both jointly with reinforcement learning in a high-level design space.
+          </p>
+        </details>
+      </li>
+
+      <li>
+        <a class="pub-title" href="https://scholar.google.com/scholar?q=DIAS+Distance-based+Attention+Sparsity+Ultra-Long-Sequence+Transformer+Tree-like+Processing-in-Memory" target="_blank" rel="noopener">
+          DIAS: Distance-based Attention Sparsity for Ultra-Long-Sequence Transformer with Tree-like
+          Processing-in-Memory Architecture
+        </a>
+        <p class="pub-authors">Z. Chen, Y. Chen, <strong>Teng Wan</strong>, T. Yu, Y. Wang, H. Yang, X. Li</p>
+        <p class="pub-venue">ACM/IEEE Design Automation Conference (DAC), pp. 1–7, 2025</p>
+        <details>
+          <summary>Abstract</summary>
+          <p>
+            Distance-aware attention sparsification combined with a tree-like in-memory processing
+            architecture, to accelerate inference for ultra-long sequences.
+          </p>
+        </details>
+      </li>
+
+      <li>
+        <a class="pub-title" href="https://scholar.google.com/scholar?q=ROM-SRAM+Hybrid+Compute-in-Memory+for+Edge+AI+Circuits+Architectures+Challenges" target="_blank" rel="noopener">
+          ROM-SRAM Hybrid Compute-in-Memory for Edge AI: Circuits, Architectures and Challenges
+        </a>
+        <p class="pub-authors">X. Du, T. Yu, H. Zhou, L. A. Cheong, <strong>Teng Wan</strong>, H. Yang, X. Li</p>
+        <p class="pub-venue">The Journal of Supercomputing, 81(17):1606, 2025</p>
+        <details>
+          <summary>Abstract</summary>
+          <p>
+            A review of ROM-SRAM hybrid compute-in-memory for edge AI — circuits, architectures and the
+            open challenges between them.
+          </p>
+        </details>
+      </li>
+
+    </ol>
+  </section>
+
+  <!-- ===================== education ===================== -->
+  <section class="card">
+    <h2>Education</h2>
+
+    <div class="row">
+      <span class="when">2024 – now</span>
+      <span class="what">
+        <strong>Ph.D. in Electronic Engineering</strong>
+        <span class="sub">Tsinghua University · Advisor: Prof. Xueqing Li · hardware–software co-design
+        for large-model computing</span>
+      </span>
+    </div>
+
+    <div class="row">
+      <span class="when">2020 – 2024</span>
+      <span class="what">
+        <strong>B.Eng. in Electronic Engineering</strong>
+        <span class="sub">Tsinghua University</span>
+      </span>
+    </div>
+  </section>
+
+  <!-- ===================== experience ===================== -->
+  <section class="card">
+    <h2>Experience</h2>
+
+    <div class="row">
+      <span class="when">2026</span>
+      <span class="what">
+        <strong>Research Intern, Xiaomi</strong>
+        <span class="sub">Inference performance for large language models: finding where time actually
+        goes in the prefill stage of modern transformer models, and evaluating scheduling strategies for
+        serving.</span>
+      </span>
+    </div>
+
+    <div class="row">
+      <span class="when">2023</span>
+      <span class="what">
+        <strong>Research Intern, Shanghai AI Laboratory</strong>
+        <span class="sub">Training infrastructure for large models: surveying memory-optimisation
+        strategies such as ZeRO/FSDP and offloading, and prototyping distributed training.</span>
+      </span>
+    </div>
+
+    <div class="row">
+      <span class="when">2025 – now</span>
+      <span class="what">
+        <strong>Department compute cluster</strong>
+        <span class="sub">Maintaining the group's cluster and shared services, used by around seventy
+        researchers.</span>
+      </span>
+    </div>
+  </section>
+
+  <footer>
+    <p>Last updated October 2026</p>
+  </footer>
+
+</main>
+
+</body>
+</html>
