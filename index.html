@@ -70,7 +70,7 @@
     <ol class="pubs">
 
       <li>
-        <a class="pub-title" href="https://scholar.google.com/scholar?q=EGO+Efficient+Compression+of+Unstructured+Sparse+DNNs+Compute-in-Memory" target="_blank" rel="noopener">
+        <a class="pub-title" href="https://doi.org/10.23919/date69613.2026.11539370" target="_blank" rel="noopener">
           EGO: Efficient Compression of Unstructured Sparse DNNs for Compute-in-Memory based on Graph
           Minimum-Cost Matching Optimization
         </a>
@@ -79,15 +79,30 @@
         <details>
           <summary>Abstract</summary>
           <p>
-            Compute-in-memory arrays have a fixed structure, which unstructured sparsity does not match.
-            We cast the compression as a minimum-cost matching problem on a graph, mapping weights onto
-            arrays at almost no accuracy loss and cutting both storage and compute overhead.
+            Compute-in-memory (CiM) for edge AI inference operates under strict memory and energy
+            constraints. While unstructured pruning reduces model size and computation, efficiently
+            deploying the sparse weights on CiM's dense, regular arrays remains challenging. Existing
+            studies either incur high indexing overhead by storing per-element indexing metadata, or
+            achieve limited compression by relying on scarce structural patterns within unstructured
+            weights. The column packing method, which avoids the high overhead of per-element indexing
+            and offers rich compression potential, shows promise to reconcile unstructured sparsity
+            with CiM's regular compute pattern, but its direct application to CiM is hindered by
+            heuristic grouping algorithms that either yield suboptimal compression or sacrifice model
+            accuracy. To bridge this gap and unlock the potential of column packing for CiM, this study
+            presents EGO, an algorithm-hardware co-designed framework. EGO overcomes the inefficiency
+            of heuristic grouping by introducing a combinatorially optimized grouping algorithm, which
+            formulates column packing as minimum-cost graph matching. A digital CiM architecture is
+            co-designed with the EGO column grouping formulation, which features a custom Sparsity
+            Processing Unit (SPU) to enable efficient activation routing while preserving CiM's dense
+            and regular dataflow. Circuit-level simulations show that EGO achieves 1.4–3.7x average
+            improvement in energy efficiency and 1.2–1.8x average improvement in area efficiency
+            compared to previous state-of-the-art methods.
           </p>
         </details>
       </li>
 
       <li>
-        <a class="pub-title" href="https://scholar.google.com/scholar?q=ADDR+Architecture+Design+and+Model+Deployment+Optimization+Hybrid+SRAM-ROM+Compute-in-Memory" target="_blank" rel="noopener">
+        <a class="pub-title" href="https://doi.org/10.1145/3716368.3735252" target="_blank" rel="noopener">
           ADDR: Architecture Design and Model Deployment Optimization for Hybrid SRAM-ROM
           Compute-in-Memory
         </a>
@@ -96,15 +111,28 @@
         <details>
           <summary>Abstract</summary>
           <p>
-            SRAM is flexible but large; ROM is dense but static. Hybridising them lets weights live where
-            their access patterns suit them. Since architecture and deployment are tightly coupled, we
-            search both jointly with reinforcement learning in a high-level design space.
+            SRAM-based compute-in-memory (SRAM-CiM) architectures reduce data movement overhead but
+            suffer from frequent off-chip weight access due to limited on-chip capacity. The hybrid
+            SRAM-ROM CiM architecture addresses this by combining high-density ROM for storing reusable
+            DNN backbone weights and reconfigurable SRAM for task-specific fine-tuning, achieving over
+            10× higher energy efficiency than SRAM-CiM. However, optimizing this architecture requires
+            navigating a complex design space involving heterogeneous memory characteristics,
+            layer-specific configurations, and hardware-dataflow co-design, which is a challenging
+            optimization problem. While reinforcement learning (RL) is a powerful solution to serial
+            optimization, conventional RL struggles with sparse rewards and poor sample efficiency due
+            to the rarity of high-quality solutions in the vast search space. This study presents the
+            SA-filtered RL algorithm that filters RL actions using simulated annealing based on the
+            reward to shape the collected data distribution, enabling efficient convergence under
+            constrained optimization budgets. Evaluations using a custom dependency-driven simulator
+            demonstrate that the presented method achieves a 2.9× average improvement in
+            figure-of-merit (FoM) over baseline algorithms, and 12.2–25.5× over unoptimized systems,
+            advancing the deployment of energy-efficient edge intelligence systems.
           </p>
         </details>
       </li>
 
       <li>
-        <a class="pub-title" href="https://scholar.google.com/scholar?q=DIAS+Distance-based+Attention+Sparsity+Ultra-Long-Sequence+Transformer+Tree-like+Processing-in-Memory" target="_blank" rel="noopener">
+        <a class="pub-title" href="https://doi.org/10.1109/dac63849.2025.11133343" target="_blank" rel="noopener">
           DIAS: Distance-based Attention Sparsity for Ultra-Long-Sequence Transformer with Tree-like
           Processing-in-Memory Architecture
         </a>
@@ -113,14 +141,27 @@
         <details>
           <summary>Abstract</summary>
           <p>
-            Distance-aware attention sparsification combined with a tree-like in-memory processing
-            architecture, to accelerate inference for ultra-long sequences.
+            Long-context inference has become a central focus in recent self-regressive Transformer
+            research. However, challenges still remain in performing decode stage due to the memory
+            bandwidth bottleneck of attention mechanisms and the substantial memory overhead associated
+            with KV cache. Although attention sparsity has been proposed as a potential solution,
+            conventional sparsity methods that rely on heuristic algorithms often suffer from accuracy
+            degradation when applied to ultra-long sequences. To break through the dilemma between
+            accuracy-performance and bandwidth-capacity, this work proposes DIAS, a distance-based
+            irregular attention sparsity approach with processing-in-memory (PIM) architecture. DIAS
+            employs approximate top-K attention (AK-Attention) scores through graph-based search to
+            improve inference efficiency while maintaining accuracy. Furthermore, a scalable tree-like
+            PIM (TreePIM) architecture is introduced to achieve both memory capacity and bandwidth
+            improvement by isolating enormous memory access for KV cache into the PIM units. Evaluations
+            on various configurations of DIAS for LongBench with Llama3-405B models with 1M sequence
+            length show up to 75× speedup compared with the state-of-the-art LLM accelerator, with
+            accuracy drop of less than 1 %.
           </p>
         </details>
       </li>
 
       <li>
-        <a class="pub-title" href="https://scholar.google.com/scholar?q=ROM-SRAM+Hybrid+Compute-in-Memory+for+Edge+AI+Circuits+Architectures+Challenges" target="_blank" rel="noopener">
+        <a class="pub-title" href="https://doi.org/10.1007/s11227-025-08080-2" target="_blank" rel="noopener">
           ROM-SRAM Hybrid Compute-in-Memory for Edge AI: Circuits, Architectures and Challenges
         </a>
         <p class="pub-authors">X. Du, T. Yu, H. Zhou, L. A. Cheong, <strong>Teng Wan</strong>, H. Yang, X. Li</p>
@@ -128,8 +169,19 @@
         <details>
           <summary>Abstract</summary>
           <p>
-            A review of ROM-SRAM hybrid compute-in-memory for edge AI — circuits, architectures and the
-            open challenges between them.
+            The rapid growth of neural network parameters presents critical challenges for deploying
+            artificial intelligence on edge devices with limited memory and power budgets.
+            Compute-in-memory (CiM) has emerged as a promising approach to overcoming the memory wall by
+            integrating storage and computation. Under a mature complementary metal-oxide-semiconductor
+            (CMOS) technology, the recently proposed hybrid CiM based on read-only memory (ROM) and
+            static random-access memory (SRAM) is a promising way to further improve energy efficiency
+            by cutting off the off-chip weight fetch. This paper surveys ROM-based CiM circuits in
+            various domains and analyzes their efficiency, accuracy, and scalability. We further explore
+            ROM-SRAM hybrid CiM architectures, which balance memory density and flexibility through
+            weight and structural adaptation for efficient fine-tuning and task migration. Further
+            challenges including achieving larger on-chip capacity, scaling to large models, and
+            protecting data privacy are discussed. Finally, we highlight prospects for expanding hybrid
+            CiM architectures to broader edge artificial intelligence applications.
           </p>
         </details>
       </li>
